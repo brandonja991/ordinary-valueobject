@@ -1,7 +1,7 @@
 {
-  "name": "ordinary/template",
-  "description": "Template for ordinary/* libraries.",
-  "keywords": ["keyword1", "keyword2"],
+  "name": "ordinary/valueobject",
+  "description": "Library for implementing value objects.",
+  "keywords": ["value-object", "valueobject"],
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -14,25 +14,25 @@
     "php": "^8.2"
   },
   "require-dev": {
-    "ordinary/coding-style": "^1.0",
-    "phpunit/phpunit": "^9.6",
-    "vimeo/psalm": "^5.7",
+    "ordinary/coding-style": "^1.1",
+    "phpunit/phpunit": "^10.1",
+    "vimeo/psalm": "^5.9",
     "squizlabs/php_codesniffer": "^3.7",
-    "slevomat/coding-standard": "^8.8",
+    "slevomat/coding-standard": "^8.11",
     "roave/security-advisories": "dev-latest",
     "psalm/plugin-phpunit": "^0.18",
     "overtrue/phplint": "^6.1",
-    "captainhook/captainhook": "^5.14",
+    "captainhook/captainhook": "^5.16",
     "captainhook/plugin-composer": "^5.3"
   },
   "autoload": {
     "psr-4": {
-      "Ordinary\\Template\\": "src"
+      "Ordinary\\ValueObject\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Ordinary\\Template\\": "tests"
+      "Ordinary\\ValueObject\\": "tests"
     }
   },
   "config": {
