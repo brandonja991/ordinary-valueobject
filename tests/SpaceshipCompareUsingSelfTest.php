@@ -34,6 +34,11 @@ class SpaceshipCompareUsingSelfTest extends TestCase
             use IsNullFromExternalValue;
             use JsonFromExternalValue;
 
+            public static function fromValue(mixed $value): self
+            {
+                throw new BadMethodCallException('Method not needed in test case, called with value: ' . $value);
+            }
+
             /**
              * Here for psalm work around
              *
@@ -42,11 +47,6 @@ class SpaceshipCompareUsingSelfTest extends TestCase
             public function __unserialize(array $data): void
             {
                 parent::__unserialize($data);
-            }
-
-            public static function fromValue(mixed $value): static
-            {
-                throw new BadMethodCallException('Method not needed in test case, called with value: ' . $value);
             }
 
             public function externalValue(): bool|int|float|string|array|object|null

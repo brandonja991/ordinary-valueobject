@@ -10,7 +10,7 @@ trait BackedEnumValueObject
     use JsonFromExternalValue;
     use SpaceshipCompareUsingExternalValue;
 
-    public static function fromValue(mixed $value): static
+    public static function fromValue(mixed $value): self
     {
         return self::from($value);
     }

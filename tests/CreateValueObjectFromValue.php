@@ -17,13 +17,13 @@ trait CreateValueObjectFromValue
             use IsNullFromExternalValue;
             use JsonFromExternalValue;
 
-            public function __construct(private mixed $value)
-            {
-            }
-
-            public static function fromValue(mixed $value): static
+            public static function fromValue(mixed $value): self
             {
                 throw new BadMethodCallException('Method not needed in test case, called with value: ' . $value);
+            }
+
+            public function __construct(private mixed $value)
+            {
             }
 
             public function externalValue(): bool|int|float|string|array|object|null

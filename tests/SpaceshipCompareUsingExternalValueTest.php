@@ -34,7 +34,7 @@ class SpaceshipCompareUsingExternalValueTest extends TestCase
                 use IsNullFromExternalValue;
                 use JsonFromExternalValue;
 
-                public static function fromValue(mixed $value): static
+                public static function fromValue(mixed $value): self
                 {
                     throw new BadMethodCallException('Method not needed in test case, called with value: ' . $value);
                 }
@@ -50,7 +50,7 @@ class SpaceshipCompareUsingExternalValueTest extends TestCase
                 use IsNullFromExternalValue;
                 use JsonFromExternalValue;
 
-                public static function fromValue(mixed $value): static
+                public static function fromValue(mixed $value): self
                 {
                     throw new BadMethodCallException('Method not needed in test case, called with value: ' . $value);
                 }

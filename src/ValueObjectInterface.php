@@ -8,7 +8,7 @@ use JsonSerializable;
 
 interface ValueObjectInterface extends JsonSerializable
 {
-    public static function fromValue(mixed $value): static;
+    public static function fromValue(mixed $value): self;
 
     public function externalValue(): bool|int|float|string|array|object|null;
 
